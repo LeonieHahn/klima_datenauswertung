@@ -17,8 +17,8 @@ def main():
     # sort by date does not work yet as there appear dates multiple times
     data_set_complete.sort(key=lambda x: x.datum)
 
-    my_parser.set_full_data_set(data_set_complete)  # pass the list to the parser
-
+    my_parser.set_data_set(data_set_complete)  # pass the list to the parser
+    my_parser.remove_redundant_measurements()
     data_set_complete = my_parser.fill_missing_dates()
 
     # write one big csv-file
