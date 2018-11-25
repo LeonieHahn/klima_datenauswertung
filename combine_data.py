@@ -108,7 +108,7 @@ class DataParser(object):
                     else:
                         id = int(row[0])
                         # datetime_object = datetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')
-                        datetime_object = datetime.strptime(row[1], '%m/%d/%y %H:%M:%S %p')
+                        datetime_object = datetime.strptime(row[1], '%m/%d/%y %I:%M:%S %p')
                         temp_1 = float(row[2])
                         water_1 = float(row[3])
                         temp_2 = float(row[4])

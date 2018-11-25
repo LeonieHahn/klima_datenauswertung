@@ -15,7 +15,7 @@ def main():
         data_set_complete += my_parser.import_one_csv()
 
     # sort by date does not work yet as there appear dates multiple times
-    # data_set_complete.sort(key=lambda x: x.datum)
+    data_set_complete.sort(key=lambda x: x.datum)
 
     my_parser.set_full_data_set(data_set_complete)  # pass the list to the parser
 
