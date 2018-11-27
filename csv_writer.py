@@ -16,6 +16,6 @@ class CSVWriter:
                 spamwriter.writerow([DEFAULTVALUE if measurement.id is None else measurement.id,
                                      measurement.datum,
                                      DEFAULTVALUE if measurement.temp_1 is None else measurement.temp_1,
-                                     DEFAULTVALUE if measurement.water_1 is None else measurement.water_2,
+                                     DEFAULTVALUE if measurement.water_1 is None else measurement.water_1,
                                      DEFAULTVALUE if measurement.temp_2 is None else measurement.temp_2,
                                      DEFAULTVALUE if measurement.water_2 is None else measurement.water_2])

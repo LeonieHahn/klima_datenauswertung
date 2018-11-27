@@ -40,10 +40,18 @@ class DataParser(object):
                 print("next data set detected!")
                 print(f'current {current_date} next {next_date}')
                 next_measurement = index_m + 1
+<<<<<<< HEAD
+=======
+                calendar_index += 1
+>>>>>>> 4a100faaa076a82237e6ae04cbe45cc9182834c7
                 while not self.calender_date_and_measurement_date_are_the_same(calendar_index, next_measurement):
                     new_data_set.append(Measurement(None, calendar[calendar_index], None, None, None, None))
                     calendar_index += 1
                 print("next data set appended!")
+<<<<<<< HEAD
+=======
+            calendar_index += 1
+>>>>>>> 4a100faaa076a82237e6ae04cbe45cc9182834c7
         return new_data_set
 
     def calender_date_and_measurement_date_are_the_same(self, index_c, index_m):
@@ -116,8 +124,17 @@ class DataParser(object):
 
                         if line_count < 1:
                             print(
+<<<<<<< HEAD
                                 f'\tIndex: {row[0]} Date {row[1]} Temp1 {row[2]} Water1 {row[3]} Temp2 {row[4]} '
                                 f'Water2 {row[5]} ')
+=======
+                                f'\tIndex: {m_id} '
+                                f'Date {datetime_object} '
+                                f'Temp1 {temp_1} '
+                                f'Water1 {water_1} '
+                                f'Temp2 {temp_2} '
+                                f'Water2 {water_2} ')
+>>>>>>> 4a100faaa076a82237e6ae04cbe45cc9182834c7
 
                         # create instance of Measurement
                         measurement = Measurement(f'{self._file_no}_{m_id}', datetime_object, temp_1, water_1, temp_2,
